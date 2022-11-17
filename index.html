@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monty Hall</title>
+    <link rel="stylesheet" href="css\style.css">
+    
+</head>
+<body>
+    <script src="js\notname.js"></script>
+
+    <div class="content">
+
+        <div class="containerH">
+            <div class="wrap">
+                <div class="header">
+                    <p> <h1>Парадокс Монти Холла</h1> </p>
+                </div>
+                <div class="counter">
+                    <p> <h2 id="commonCounter">Количество попыток: 0</h2> </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="containerDoors">
+
+            <div id="door1" class="door" onclick="chooseDoor(1)">
+                <div class="text">
+                    <p id="textDoor1" class="textDoor"></p>
+                </div>
+            </div>
+
+            <div id="door2" class="door" onclick="chooseDoor(2)">
+                <div class="text">
+                    <p id="textDoor2" class="textDoor"></p>
+                </div>
+            </div>
+
+            <div id="door3" class="door" onclick="chooseDoor(3)">
+                <div class="text">
+                    <p id="textDoor3" class="textDoor"></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="containerF">
+            
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>Дверь менялась</th>
+                        <th>Дверь не менялась</th>
+                    </tr>
+                    <tr>
+                        <th class="firstColumm">Количество игр:</th>
+                        <th class="successfulCount" id="allSuccessful">0</th>
+                        <th class="unsuccessfulCount " id="alltUnsuccessful">0</th>
+                    </tr>
+                    <tr>
+                        <th class="firstColumm">Выиграно:</th>
+                        <th class="successfulCount" id="leftSuccessful">0</th>
+                        <th class="unsuccessfulCount " id="leftUnsuccessful">0</th>
+                    </tr> 
+                    <tr>
+                        <th class="firstColumm">Проиграно:</th>
+                        <th class="successfulCount" id="rightSuccessful">0</th>
+                        <th class="unsuccessfulCount " id="rightUnsuccessful">0</th>
+                    </tr> 
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+</body>
+</html>

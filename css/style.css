@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 150;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+
+}
+
+.wrap{
+
+}
+
+.containerH{
+    justify-content: center;
+    text-align:center;
+    background: linear-gradient(to top, rgb(218, 200, 250) 20%, rgb(250, 200, 242) 50%, rgb(250, 200, 222) 80%);
+    height: 20vh;
+    display: flex;
+    min-height: 150px;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.header{
+    font-family: Verdana, Helvetica, Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 2px 3px 4px rgb(62, 60, 60);
+}
+
+.containerDoors {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    background: linear-gradient(to top, rgb(200, 203, 250) 20%, rgb(200, 239, 250) 50%, rgb(218, 200, 250) 80%);
+    min-width: 100px;
+    height: 51.5vh;
+    min-height: 10vh;
+}
+
+.textDoor{
+
+}
+
+.door {
+    display: flex;
+    width: 15vw;
+    height: 30vh;
+    border-radius: 0 7vh;
+    box-shadow: 0 0 10vh rgba(0,0,0,0.5);
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    text-align: center;
+}
+
+.containerF {
+    display: flex;
+    background: linear-gradient(to top, rgb(155, 144, 255) 20%, rgb(155, 162, 255) 50%, rgb(200, 203, 250) 80%);
+    justify-content: space-around;
+    height: 28.5vh;
+}
+
+table {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+th {
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+@media screen and  (max-width: 580px){  
+    .door {
+        display: flex;
+        width: 15vw;
+        height: 20vh;
+        border-radius: 0 15vh;
+        box-shadow: 0 0 10vh rgba(0,0,0,0.5);
+        background-color: rgb(0, 0, 0);
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.firstColumn {
+    text-align: left;
+}
