@@ -65,7 +65,7 @@ function chooseDoor(doorNumber){
             let dWrong = document.getElementById("door"+wrongDoor.toString());
             setTimeout(() => {
                 dWrong.style.backgroundColor = "#FF8383";
-            }, 500); 
+            }, 100); 
         }
         
         
@@ -82,7 +82,7 @@ function chooseDoor(doorNumber){
             let dWrong = document.getElementById("door"+(wrongDoor.toString()));
             setTimeout(() => {
                 dWrong.style.backgroundColor = "#FF8383";
-            }, 500); 
+            }, 100); 
             doorPrevious = doorNumber;
         }else{
             commonCnt++;
@@ -105,14 +105,13 @@ function chooseDoor(doorNumber){
         }
 
     }
-   document.getElementById("allSuccessful").innerHTML = commonChanged.toString();
-   document.getElementById("leftSuccessful").innerHTML = successfulChanged.toString();
-   document.getElementById("leftUnsuccessful").innerHTML = unSuccessfulChanged.toString();
-
-   document.getElementById("alltUnsuccessful").innerHTML = commonNotChanged.toString();
-   document.getElementById("rightSuccessful").innerHTML = successfulNotChanged.toString();
-   document.getElementById("rightUnsuccessful").innerHTML = unSuccessfulNotChanged.toString();
-    
+    document.getElementById("leftCount").innerHTML = commonChanged.toString();
+    document.getElementById("leftSuccessful").innerHTML = successfulChanged.toString();
+    document.getElementById("leftUnsuccessful").innerHTML = unSuccessfulChanged.toString();
+ 
+    document.getElementById("rightCount").innerHTML = commonNotChanged.toString();
+    document.getElementById("rightSuccessful").innerHTML = successfulNotChanged.toString();
+    document.getElementById("rightUnsuccessful").innerHTML = unSuccessfulNotChanged.toString();
    
 }
 
